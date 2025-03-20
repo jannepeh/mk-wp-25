@@ -6,7 +6,7 @@ get_header();
             <h1>Welcome to our website</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
         </div>
-        <img src="<?php echo get_template_directory_uri(); ?>/map.svg" alt="Hero">
+        <?php the_custom_header_markup(); ?>
     </section>
     <main>
         <section class="products">
