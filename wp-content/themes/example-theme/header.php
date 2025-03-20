@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example WordPress Theme</title>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>">
@@ -23,11 +23,4 @@
                 </ul>
             </nav>
         </div>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Welcome to our website</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
-            </div>
-            <img src="<?php echo get_template_directory_uri(); ?>/map.svg" alt="Hero">
-        </section>
     </header>
