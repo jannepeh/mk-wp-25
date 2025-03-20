@@ -17,9 +17,9 @@
         <div class="header-top-right">
             <nav>
                 <ul>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="/about-us">About us</a></li>
+                    <li><a href="#">About us</a></li>
                 </ul>
             </nav>
         </div>
