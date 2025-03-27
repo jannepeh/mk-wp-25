@@ -12,7 +12,7 @@
 <div class="container">
     <header class="page-header">
         <div class="header-top-left">
-            <?php the_custom_logo(); ?>
+            <?php the_custom_logo() ?>
         </div>
         <div class="header-top-right">
             <nav>
