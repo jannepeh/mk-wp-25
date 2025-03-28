@@ -17,6 +17,11 @@ function theme_setup(): void
 
     // Add custom image sizes
     add_image_size( 'custom-header', 1200, 400, true ); // Custom header size
+
+    // Add search functionality to HTML5
+    // This will add the search form to the theme's HTML5 markup
+    add_theme_support( 'html5', array( 'search-form' ) );
+
 }
 
 add_action( 'after_setup_theme', 'theme_setup' );
@@ -28,3 +33,15 @@ function register_my_menu(): void
 }
 
 add_action( 'after_setup_theme', 'register_my_menu' );
+
+
+
+// filters
+
+function search_filter($query) {
+    if ($query->is_search) {
+      $query->set('category_name', 'products');
+    }
+       return $query;
+   }
+   add_filter('pre_get_posts','search_filter');

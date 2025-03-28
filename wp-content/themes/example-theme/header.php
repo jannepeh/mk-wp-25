@@ -18,3 +18,8 @@
             <?php wp_nav_menu(["theme_location" => "main-menu", "container" => "nav"]); ?>
         </div>
     </header>
+    <section class="breadcrumbs">
+    <?php if ( function_exists('bcn_display') ) {
+        bcn_display();
+}      ?>
+    </section>
