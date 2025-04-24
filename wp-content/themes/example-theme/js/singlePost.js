@@ -20,7 +20,7 @@ const myAJAXFunction = async (id) => {
     });
     const post = await response.json();
     console.log(post);
-    return post;
+    return post.data;
 };
 
 modalButtons.forEach((button) => {
