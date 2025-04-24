@@ -14,9 +14,9 @@ function generate_article( $products ): void {
                     <?php echo substr( $excerpt, 0, 80 ); ?>...
                 </p>
                 <a href="<?php echo get_permalink(); ?>">Read More</a>
-                <a href="#" class="open-modal" data-id="<?php echo get_the_ID(); ?>">Open modal</a>
+                <a href="#" class="open-modal" data-id="<?php echo get_the_ID(); ?>" >Open modal</a>
             </article>
         <?php
         endwhile;
     endif;
-}
+} // end generate_article()

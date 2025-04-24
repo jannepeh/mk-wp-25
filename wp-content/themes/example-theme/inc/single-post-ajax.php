@@ -1,7 +1,5 @@
 <?php
 
-
-
 add_action( 'wp_ajax_single_post', 'single_post' );
 
 function single_post(): void {
