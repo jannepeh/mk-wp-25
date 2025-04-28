@@ -19,4 +19,4 @@ function generate_article( $products ): void {
         <?php
         endwhile;
     endif;
-} // end generate_article()
+}

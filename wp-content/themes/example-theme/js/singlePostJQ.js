@@ -5,16 +5,14 @@ const modalButtons = jQuery('.open-modal');
 const closeBtn = jQuery('#close');
 const modalContent = jQuery('#modal-content');
 
-const myAJAXFunction =  (id) => {
-
+const myAJAXFunction = (id) => {
     const url = singlePost.ajax_url;
     const data = {
-        action: 'single_post',
-        post_id: id,
+        action: 'single_post', post_id: id,
     };
-    jQuery.post(url, data).done((response)=> {
+    jQuery.post(url, data).done((response) => {
         console.log(response);
-        const result = response.data
+        const result = response.data;
         modalContent.empty();
         modalContent.html(`<h2>${result.post_title}</h2>`);
         modalContent.append(result.post_content);
@@ -23,7 +21,8 @@ const myAJAXFunction =  (id) => {
 }
 
 modalButtons.on('click', (evt) => {
-    evt.preventDefault()
+    evt.preventDefault();
+    console.log(evt.target.dataset.id);
     myAJAXFunction(evt.target.dataset.id)
 })
 

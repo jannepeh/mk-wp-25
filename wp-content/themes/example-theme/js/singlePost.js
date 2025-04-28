@@ -30,6 +30,7 @@ modalButtons.forEach((button) => {
         modalContent.innerHTML = '';
         modalContent.insertAdjacentHTML('afterbegin', `<h2>${result.post_title}</h2>`);
         modalContent.insertAdjacentHTML('beforeend', result.post_content);
+        modalContent.insertAdjacentHTML('beforeend', result.like);
         modal.showModal();
     })
 });
