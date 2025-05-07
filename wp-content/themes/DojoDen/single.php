@@ -15,7 +15,6 @@ get_header();
                     _e('Sorry, no posts matched your criteria.', 'textdomain');
                 endif;
 
-                echo do_shortcode('[like_button post_id="' . get_the_ID() . '"]');
                 ?>
             </article>
         </section>
