@@ -58,7 +58,7 @@ footer {
   margin: 2rem 0;
   text-align: center;
   width: 100%;
-  background-image: url('wave2.svg');
+  background-image: url('banner-photo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,7 +78,7 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 1rem;
   justify-content: space-between;
-  background-image: url('wave.svg');
+  background-image: url('banner-photo.jpg');
   background-repeat: no-repeat;
 }
 
@@ -258,21 +258,19 @@ footer {
   max-width: 800px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: var(--color-single-bg);
+  background-color: pink;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  color: var(--color-text);
+  color: black;
 }
 
 .contact-page h1,
 .contact-page h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: var(--color-link-bg);
 }
 
 .contact-page p {
-  line-height: var(--line-height);
   margin-bottom: 1rem;
 }
 
@@ -286,28 +284,29 @@ footer {
 .contact-page textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius);
-  background-color: var(--color-background);
-  color: var(--color-text);
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
 }
 
 .contact-page input:focus,
 .contact-page textarea:focus {
   outline: none;
-  border-color: var(--color-link-bg);
+  border-color: black;
 }
 
 .contact-page button {
   padding: 0.75rem;
-  background-color: var(--color-link-bg);
-  color: var(--color-background);
+  background-color: black;
+  color: white;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact-page button:hover {
-  background-color: var(--color-header-link-bg);
+  background-color: white;
+    color: black;
 }
