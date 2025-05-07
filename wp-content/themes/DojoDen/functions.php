@@ -36,6 +36,8 @@ add_action( 'after_setup_theme', 'register_my_menu' );
 
 
 
+
+
 // filters
 
 function search_filter($query) {

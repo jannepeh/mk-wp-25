@@ -6,7 +6,7 @@ get_header();
         <section>
             <h1>Contact Us</h1>
             <p>Feel free to reach out to us using the form below.</p>
-            <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
+            <form onsubmit="window.location.href='<?php echo esc_url(home_url('/')); ?>'; return false;">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>

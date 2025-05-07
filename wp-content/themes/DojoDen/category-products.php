@@ -13,10 +13,10 @@ get_header();
         $header_images = get_uploaded_header_images();
         array_shift($header_images); // -> indeksit alkaa 0:sta
         ?>
-        <img src="<?php echo $header_images[0]['url']; ?>" alt="Random kuva"
-             width="<?php echo get_custom_header()->width; ?>"
-             height="<?php echo get_custom_header()->height; ?>"
-        >
+        <!--         <img src="--><?php //echo $header_images[0]['url']; ?><!--" alt=""-->
+        <!--             width="--><?php //echo get_custom_header()->width; ?><!--"-->
+        <!--             height="--><?php //echo get_custom_header()->height; ?><!--"-->
+        <!--        >-->
     </section>
     <main>
         <section class="products">
@@ -38,11 +38,10 @@ get_header();
                 <article class="product all">
                     <a href="<?php echo get_category_link($subcategory->term_id); ?>">View all</a>
                 </article>
-            <?php
-            wp_reset_postdata();
+                <?php
+                wp_reset_postdata();
             endforeach;
             ?>
-
 
 
         </section>

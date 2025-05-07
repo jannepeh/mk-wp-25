@@ -310,3 +310,9 @@ footer {
   background-color: white;
     color: black;
 }
+
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 1rem;
+}
